@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT csv (rows)>
+<!ELEMENT rows (row+)>
+<!ELEMENT row (columns)>
+<!ELEMENT columns (column+)>
+<!ELEMENT column (#PCDATA)>
+<!ATTLIST column
+          columnId CDATA #REQUIRED>
