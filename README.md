@@ -7,16 +7,16 @@
 <!ELEMENT column (#PCDATA)>
 <!ATTLIST column   columnId CDATA #REQUIRED>
   
- ##EX:
+ ## EX:
  ************************************************************************
-##the CSV file:( CSVtoDOM\src\csvFiles\email.csv)
+## the CSV file:( CSVtoDOM\src\csvFiles\email.csv)
 Login email;Identifier;First name;Last name
 laura@example.com;2070;Laura;Grey
 craig@example.com;4081;Craig;Johnson
 mary@example.com;9346;Mary;Jenkins
 jamie@example.com;5079;Jamie;Smith
  ************************************************************************
-##the Xmlfile:( CSVtoDOM\src\csvFiles\email.xml)
+## the Xmlfile:( CSVtoDOM\src\csvFiles\email.xml)
 <csv>    <----------- Root elm
 <rows>
 <row>
@@ -31,7 +31,7 @@ jamie@example.com;5079;Jamie;Smith
       .......
 </csv>
 **********************************************************
-##class info:(in MainPack)
+## class info:(in MainPack)
 Main.java ----------------> main class
 CSVfileReader.java -----------> parse csv file ( Delimiter,rows ,column)
 DomBuilder.java --------------> build the dom tree (output xml file)
